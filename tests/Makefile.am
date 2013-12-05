@@ -1,6 +1,6 @@
 AM_CFLAGS = @GCC_FLAGS@
 
-noinst_PROGRAMS= test-fb           \
+bin_PROGRAMS= test-fb           \
 	      test-gdk          \
 	      test-gdk-idle          \
 	      test-gtk-layout   \
