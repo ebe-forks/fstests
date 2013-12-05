@@ -44,7 +44,6 @@
 
 #include <ft2build.h>
 #include FT_FREETYPE_H
-#include "freetype/ftsynth.h"
 
 #define VERSION "0.1"
 
