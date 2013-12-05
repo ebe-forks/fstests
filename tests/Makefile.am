@@ -48,19 +48,19 @@ test_xft_CFLAGS = @XLIBS_CFLAGS@ @PANGO_CFLAGS@
 
 # draws pango strings with just x
 test_pango_SOURCES = test-pango.c
-test_pango_LDADD = @PANGO_LIBS@
+test_pango_LDADD = @PANGO_LIBS@ @XLIBS_LIBS@
 test_pango_CFLAGS = @PANGO_CFLAGS@
 
 #below are as above but on 
 
 # Draws a list of Pango glyphs onto a GtkWindow with pango_xft_render
 test_pango_gdk_SOURCES = test-pango-gdk.c
-test_pango_gdk_LDADD = @GTK_LIBS@ @PANGO_LIBS@
+test_pango_gdk_LDADD = @GTK_LIBS@ @PANGO_LIBS@ @XLIBS_LIBS@
 test_pango_gdk_CFLAGS = @GTK_CFLAGS@ @PANGO_CFLAGS@
 
 # Draws a list of Pango glyphs onto a GtkDrawingArea with pango_xft_render
 test_pango_gtk_SOURCES = test-pango-gtk.c
-test_pango_gtk_LDADD = @GTK_LIBS@ @PANGO_LIBS@
+test_pango_gtk_LDADD = @GTK_LIBS@ @PANGO_LIBS@ @XLIBS_LIBS@
 test_pango_gtk_CFLAGS = @GTK_CFLAGS@ @PANGO_CFLAGS@
 
 # Draws a list of Pango glyphs onto a GtkWindow with gdk_draw_glyphs
@@ -76,7 +76,7 @@ test_pango_layout_CFLAGS = @GTK_CFLAGS@ @PANGO_CFLAGS@
 
 # As above PangoLayout onto a GtkWindow with gdk_draw_layout XXX TOGO ?
 test_gtk_layout_SOURCES = test-gtk-layout.c
-test_gtk_layout_LDADD = @GTK_LIBS@ @PANGO_LIBS@
+test_gtk_layout_LDADD = @GTK_LIBS@ @PANGO_LIBS@ @XLIBS_LIBS@
 test_gtk_layout_CFLAGS = @GTK_CFLAGS@ @PANGO_CFLAGS@
 
 
